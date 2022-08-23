@@ -1,0 +1,7 @@
+{{range .StructInfos}}
+type {{.StructName}} struct {
+    {{- range $i, $info := .FieldInfos}}
+    {{$info.FieldName}} {{$info.FieldType}} `bson:"{{$info.DbName}}"`
+    {{- end}}
+}
+{{end}}

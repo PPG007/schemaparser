@@ -1,0 +1,7 @@
+{
+    "ObjectId": "bson.ObjectId",
+    "DateTime": "time.Time",
+    "Boolean": "bool",
+    "String": "string",
+    "Long": "int64"
+}
